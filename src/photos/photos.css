@@ -1,4 +1,14 @@
 .photoGrid{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    border: 2px solid red;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 1rem;
+    width: 100%;
+}
+.photoDiv{
+    display: flex;
+    flex:1;
+    flex-shrink: 1;
+    flex-grow: 1;
 }

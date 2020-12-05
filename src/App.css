@@ -3,7 +3,6 @@
   display: flex;
   color: white;
 }
-.mainContent{
-  width: 90%;
-
+.photo-div{
+  flex: 1;
 }
