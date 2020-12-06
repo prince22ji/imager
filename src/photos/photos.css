@@ -6,6 +6,11 @@
     grid-gap: 1rem;
     width: 100%;
 }
+.photoGrid>img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 .photoDiv{
     display: flex;
     flex:1;
