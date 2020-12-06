@@ -1,7 +1,7 @@
 .photoGrid{
     display: grid;
     border: 2px solid red;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 4fr 2fr 1fr ;
     grid-template-rows: 300px 300px 300px;
     grid-gap: 1rem;
     width: 100%;

@@ -7,16 +7,16 @@ function Photos() {
     const [images, setImages]=useState([])
     useEffect(()=>{
         async function fetchData(){
-            const request= await axios.get("/rando/?client_id=kuNKOj83rk51RKOomonfSSCBRci5oSYNrXEKEPRHJYA",{params:{_limit:10}})
+            const request= await axios.get("/?client_id=kuNKOj83rk51RKOomonfSSCBRci5oSYNrXEKEPRHJYA",)
             setImages(request.data)
         }fetchData()
-    },)
+    },[])
     console.log(images)
-    const image= images.url.map((images)=> <div src={images?.regular} alt="random image" />)
+    const image= images.map((images)=><img src={images.urls?.regular} alt={images?.alt_description} key={images?.id} />)
     return (
         <div className="photoDiv">
             <div className="photoGrid">
-            
+            {image}
         </div>
         </div>
     );
