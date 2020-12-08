@@ -1,65 +1,69 @@
 .photoGrid{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(5,auto);
+    grid-gap: 15px;
     /* border: 2px solid red; */
     width: 100%;
-    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-top: -15px;
+    /* flex-wrap: wrap; */
     /* flex-wrap: wrap; */
 }
 .photoGrid>img{
     height: 300px;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: 0.2s ease-in;
     image-rendering: optimizeQuality;
     object-fit: cover;
     object-position: center;
-    padding: 10px;
+    /* padding: 10px; */
+    /* justify-items: stretch;
+    align-items: stretch; */
 
     /* justify-content: space-between; */
     
     
 }
 .photoGrid>img:nth-child(10n+1){
-    flex-grow:4;
-    flex-basis: 300px;
+    grid-column: span 6;
+    min-width: 240px;
 }
 .photoGrid>img:nth-child(10n+2){
-  flex-grow:2;
-  flex-basis: 300px;
+    grid-column: span 4;
+    min-width: 240px;
 }
 .photoGrid>img:nth-child(10n+3){
-    
-    flex-basis: 300px;
-    flex-grow:2 ;
+    grid-column: span 2;
+    min-width: 240px;
 }
 .photoGrid>img:nth-child(10n+4){
-    
-    flex-basis: 300px;
-    flex-grow: 3;
+    grid-column: span 6;
+    min-width: 240px;
 }
 .photoGrid>img:nth-child(10n+5){
-    flex-basis: 300px;
-    flex-grow: 2;
-}
+    grid-column:span 2;
+    min-width:240px;}
 .photoGrid>img:nth-child(10n+6){
-    flex-basis: 300px;
-    flex-grow:1 ;
-}
+    grid-column:span 5;
+
+min-width: 240px;}
 .photoGrid>img:nth-child(10n+7){
-    flex-basis: 300px;
-    flex-grow:1 ;
-}
+    grid-column:span 5;
+
+min-width: 240px;}
 .photoGrid>img:nth-child(10n+8){
-    flex-basis: 300px;
-    flex-grow: ;
+    grid-column: span 4;
+    min-width: 240px;
 }
 .photoGrid>img:nth-child(10n+9){
-    flex-basis: 300px;
-    flex-grow: ;
+    grid-column: span 3;
+    min-width: 240px;
 }
 .photoGrid>img:nth-child(10n+10){
-    flex-basis: 300px;
-    flex-grow: ;
+    grid-column: span 3;
+    min-width: 240px;
 }
 .photoGrid>img:hover{
     opacity:0.7;
@@ -69,4 +73,6 @@
     flex:1;
     flex-shrink: 1;
     flex-grow: 1;
+    height:max-content; 
+
 }

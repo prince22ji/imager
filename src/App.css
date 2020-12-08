@@ -1,11 +1,9 @@
 .App {
-  background: black;
+  background: #000000;
   display: flex;
   color: white;
+  height: auto;
 }
 .photo-div{
   flex: 1;
-}
-html{
-  scroll-behavior: smooth;
 }
