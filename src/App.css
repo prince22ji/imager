@@ -4,6 +4,12 @@
   color: white;
   height: auto;
 }
-.photo-div{
+.photos-div{
   flex: 1;
 }
+.navbar_div{
+  position: sticky;
+    top: 0px;
+    height: 100vh;
+}
+

@@ -1,12 +1,16 @@
 import './App.css';
 import Navbar from './navbar/Navbar'
-import Photos from './photos/Photos'
+import Home from './photos/Home/Home'
 // import axios from './axios'
 function App() {
   return (
     <div className="App">
-      <Photos />
+      <div className="photos_div">
+      <Home />
+      </div>
+      <div className="navbar-div">
       <Navbar />
+      </div>
     </div>
   );
 }
