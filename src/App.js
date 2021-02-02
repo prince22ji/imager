@@ -5,7 +5,7 @@ import TopNavbar from "./navbar/TopNavbar";
 import Navbar from "./navbar/Navbar";
 import Gallery from "./photos/Gallery/Gallery";
 import Home from "./photos/Home/Home";
-// import axios from './axios'
+
 function App() {
   return (
     <BrowserRouter>
