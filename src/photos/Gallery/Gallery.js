@@ -46,11 +46,11 @@ function Gallery() {
         {image}
       </div>
 
-      {loading ? (
+      {loading && (
         <div>
-          <p>Loading.....</p>
+          <p>Loading.......</p>
         </div>
-      ) : null}
+      )}
     </div>
   );
 }
